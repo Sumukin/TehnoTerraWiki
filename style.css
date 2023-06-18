@@ -1,0 +1,239 @@
+@import url('https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+    --blockBg: #064663;
+    --blockSh: black;
+    --blockTextSh: plum;
+    --TextSh: black;
+    --BlTextCl: #ECB365;
+    --TextCl: #ECB365;
+    --bodyCl: #041C32;
+}
+
+
+header {
+    display: flex;
+    align-items: center;
+    text-shadow: 2px 2px 1px rgb(165, 121, 11);
+    color: orange;
+    background-color: #04293A;
+    height: min-content
+}
+
+.footer {
+    display: flex;
+    bottom: 0;
+    text-shadow: 2px 2px 1px rgb(165, 121, 11);
+    color: white;
+    background-color: #04293A;
+    height: min-content;
+    font-family: Arial, Helvetica, sans-serif;
+    text-shadow: none;
+    font-size: 50%;
+}
+
+body {
+    margin: 0;
+    /* Это фон всей страницы */
+    background-color: var(--bodyCl);
+    /* Шрифт */
+    color: var(--TextCl);
+    font-family: 'Balsamiq Sans', cursive;
+    font-size: 40px;
+
+}
+
+
+.block {
+    color: var(--BlTextCl);
+    background-color: var(--blockBg);
+    border-radius: 10px;
+    width: auto;
+    float: left;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    /* box-shadow: 5px 5px 5px black; */
+    text-shadow: 1px 1px var(--TextSh);
+    box-shadow: 3px 3px 3px var(--blockSh);
+}
+
+.block1 {
+    font-size: 2vw;
+    color: var(--BlTextCl);
+    background-color: var(--blockBg);
+    border-radius: 10px;
+    width: 70%;
+    float: left;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    text-shadow: 1px 1px var(--blockSh);
+    box-shadow: 3px 3px 3px var(--blockSh);
+}
+
+
+h3 {
+    text-shadow: 1px 1px 0px var(--TextSh);
+    font-size: 40px;
+    margin: 10;
+}
+
+li {
+    font-size: 100%;
+}
+
+.costil {
+    color: white;
+    text-shadow: 1px 1px 0px black;
+    background-color: var(--bodyCl);
+    border-radius: 10px;
+    width: auto;
+    float: left;
+    margin: 15;
+}
+
+.btn {
+    margin: 5;
+    bottom: 0;
+    right: 0;
+    position: fixed;
+    display: inline-block;
+    background: var(--blockBg);
+    color: var(--BlTextCl);
+    padding: 1% 1%;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 6px double black;
+}
+
+img.sesteren {
+    margin: 25;
+    animation: 1s linear 0s normal infinite running sesteren;
+    -webkit-animation: 4s linear 0s normal none infinite running sesteren;
+    width: 120px;
+}
+
+@keyframes sesteren {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+img.pakeball {
+    margin: 25;
+    animation: 1s linear 0s alternate infinite running pakeball;
+    -webkit-animation: 0.7s linear 0s alternate none infinite running pakeball;
+    width: 120px;
+}
+
+@keyframes pakeball {
+    0% {
+        transform: translateY(-100px);
+        height: 120px;     
+    }
+    80% {
+        height: 120px;
+    }
+    100% {
+        transform: translateY(100px);
+        height: 90px;
+    }
+}
+
+
+#shk:hover {
+    animation: shake 0.5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes shake {
+    0% { transform: translate(1px, 1px) rotate(0deg); }
+    10% { transform: translate(-1px, -2px) rotate(-1deg); }
+    20% { transform: translate(-3px, 0px) rotate(1deg); }
+    30% { transform: translate(3px, 2px) rotate(0deg); }
+    40% { transform: translate(1px, -1px) rotate(1deg); }
+    50% { transform: translate(-1px, 2px) rotate(-1deg); }
+    60% { transform: translate(-3px, 1px) rotate(0deg); }
+    70% { transform: translate(3px, 1px) rotate(-1deg); }
+    80% { transform: translate(-1px, -1px) rotate(1deg); }
+    90% { transform: translate(1px, 2px) rotate(0deg); }
+    100% { transform: translate(1px, -2px) rotate(-1deg); }
+  }
+
+  .img_s:hover {
+    outline: 2px dashed #3d1f15; /* Ширина, вид и цвет рамки */
+    outline-offset: -10px; /* Выводим рамку внутри элемента */
+
+    size: 100%;
+}
+
+
+
+.a_t {
+    color: var(--BlTextCl); /* Цвет обычной ссылки */
+    position: relative;
+    cursor: pointer;
+    text-decoration: none; /* Убираем подчеркивание */
+}
+.a_t:after {
+	content: "";
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: -3px;
+    width: 0;
+    height: 2px; /* Высота линии */
+    background-color: var(--BlTextCl); /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s; /* Время эффекта */
+}
+
+.a_t:hover:after {
+	content: "";
+    width: 100%;
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    height: 2px; /* Высота линии */
+    background-color: var(--BlTextCl); /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;  /* Время эффекта */
+}
+
+
+.lightbox {
+    /* Default to hidden */
+    display: none;
+  
+    /* Overlay entire screen */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    
+    /* A bit of padding around image */
+    padding: 1em;
+  
+    /* Translucent background */
+    background: rgba(0, 0, 0, 0.8);
+  }
+  
+  /* Unhide the lightbox when it's the target */
+  .lightbox:target {
+    display: block;
+  }
+  
+  .lightbox span {
+    /* Full width and height */
+    display: block;
+    width: 100%;
+    height: 100%;
+  
+    /* Size and position background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
