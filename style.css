@@ -237,3 +237,41 @@ img.pakeball {
     background-repeat: no-repeat;
     background-size: contain;
   }
+
+::-webkit-scrollbar {
+    width: 10px;
+    background-color: #04293A;
+}
+
+
+
+::-webkit-scrollbar-thumb {
+    border-radius: 15px;
+    background: orange;
+}
+
+
+@media screen and (min-width: 768px) {
+    .mobile {
+      font-size: 7vw;
+    }
+    img.sesteren {
+        margin: 25;
+        animation: 1s linear 0s normal infinite running sesteren;
+        -webkit-animation: 4s linear 0s normal none infinite running sesteren;
+        width: 9vw;
+    }
+  }
+  
+  /* Текст для мобильных устройств: */
+@media screen and (max-width: 767px) {
+    .mobile {
+      font-size: 4vw;
+    }
+    img.sesteren {
+        margin: 25;
+        animation: 1s linear 0s normal infinite running sesteren;
+        -webkit-animation: 4s linear 0s normal none infinite running sesteren;
+        width: 9vw;
+    }
+  }
