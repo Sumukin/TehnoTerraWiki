@@ -253,7 +253,7 @@ img.pakeball {
 
 @media screen and (min-width: 901px) {
     .mobile {
-      font-size: 6.9vw;
+      font-size: 6.8vw;
     }
     img.sesteren {
         margin: 25;
@@ -266,7 +266,7 @@ img.pakeball {
   /* Текст для мобильных устройств: */
 @media screen and (max-width: 900px) {
     .mobile {
-      font-size: 4vw;
+      font-size: 6.8vw;
     }
     img.sesteren {
         margin: 25;
