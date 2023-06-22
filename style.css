@@ -298,12 +298,12 @@ img.pakeball {
 
 
 .mobile {
-    font-size: 6.7vw;
+    font-size: 6.5vw;
 }
 
 img.sesteren {
     margin: 25;
     animation: 1s linear 0s normal infinite running sesteren;
     -webkit-animation: 4s linear 0s normal none infinite running sesteren;
-    width: 8.8vw;
+    width: 8.6vw;
 }
