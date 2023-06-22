@@ -116,6 +116,7 @@ img.sesteren {
     0% {
         transform: rotate(0deg);
     }
+
     100% {
         transform: rotate(360deg);
     }
@@ -131,11 +132,13 @@ img.pakeball {
 @keyframes pakeball {
     0% {
         transform: translateY(-100px);
-        height: 120px;     
+        height: 120px;
     }
+
     80% {
         height: 120px;
     }
+
     100% {
         transform: translateY(100px);
         height: 90px;
@@ -146,25 +149,59 @@ img.pakeball {
 #shk:hover {
     animation: shake 0.5s;
     animation-iteration-count: infinite;
-  }
-  
-  @keyframes shake {
-    0% { transform: translate(1px, 1px) rotate(0deg); }
-    10% { transform: translate(-1px, -2px) rotate(-1deg); }
-    20% { transform: translate(-3px, 0px) rotate(1deg); }
-    30% { transform: translate(3px, 2px) rotate(0deg); }
-    40% { transform: translate(1px, -1px) rotate(1deg); }
-    50% { transform: translate(-1px, 2px) rotate(-1deg); }
-    60% { transform: translate(-3px, 1px) rotate(0deg); }
-    70% { transform: translate(3px, 1px) rotate(-1deg); }
-    80% { transform: translate(-1px, -1px) rotate(1deg); }
-    90% { transform: translate(1px, 2px) rotate(0deg); }
-    100% { transform: translate(1px, -2px) rotate(-1deg); }
-  }
+}
 
-  .img_s:hover {
-    outline: 2px dashed #3d1f15; /* Ширина, вид и цвет рамки */
-    outline-offset: -10px; /* Выводим рамку внутри элемента */
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+.img_s:hover {
+    outline: 2px dashed #3d1f15;
+    /* Ширина, вид и цвет рамки */
+    outline-offset: -10px;
+    /* Выводим рамку внутри элемента */
 
     size: 100%;
 }
@@ -172,40 +209,49 @@ img.pakeball {
 
 
 .a_t {
-    color: var(--BlTextCl); /* Цвет обычной ссылки */
+    color: var(--BlTextCl);
+    /* Цвет обычной ссылки */
     position: relative;
     cursor: pointer;
-    text-decoration: none; /* Убираем подчеркивание */
+    text-decoration: none;
+    /* Убираем подчеркивание */
 }
+
 .a_t:after {
-	content: "";
+    content: "";
     display: block;
     position: absolute;
     right: 0;
     bottom: -3px;
     width: 0;
-    height: 2px; /* Высота линии */
-    background-color: var(--BlTextCl); /* Цвет подчеркивания при исчезании линии*/
-    transition: width 0.5s; /* Время эффекта */
+    height: 2px;
+    /* Высота линии */
+    background-color: var(--BlTextCl);
+    /* Цвет подчеркивания при исчезании линии*/
+    transition: width 0.5s;
+    /* Время эффекта */
 }
 
 .a_t:hover:after {
-	content: "";
+    content: "";
     width: 100%;
     display: block;
     position: absolute;
     left: 0;
     bottom: -3px;
-    height: 2px; /* Высота линии */
-    background-color: var(--BlTextCl); /* Цвет подчеркивания при появлении линии*/
-    transition: width 0.5s;  /* Время эффекта */
+    height: 2px;
+    /* Высота линии */
+    background-color: var(--BlTextCl);
+    /* Цвет подчеркивания при появлении линии*/
+    transition: width 0.5s;
+    /* Время эффекта */
 }
 
 
 .lightbox {
     /* Default to hidden */
     display: none;
-  
+
     /* Overlay entire screen */
     position: fixed;
     z-index: 999;
@@ -213,30 +259,30 @@ img.pakeball {
     left: 0;
     right: 0;
     bottom: 0;
-    
+
     /* A bit of padding around image */
     padding: 1em;
-  
+
     /* Translucent background */
     background: rgba(0, 0, 0, 0.8);
-  }
-  
-  /* Unhide the lightbox when it's the target */
-  .lightbox:target {
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
     display: block;
-  }
-  
-  .lightbox span {
+}
+
+.lightbox span {
     /* Full width and height */
     display: block;
     width: 100%;
     height: 100%;
-  
+
     /* Size and position background image */
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
-  }
+}
 
 ::-webkit-scrollbar {
     width: 10px;
@@ -251,27 +297,13 @@ img.pakeball {
 }
 
 
-@media screen and (min-width: 901px) {
-    .mobile {
-      font-size: 6.8vw;
-    }
-    img.sesteren {
-        margin: 25;
-        animation: 1s linear 0s normal infinite running sesteren;
-        -webkit-animation: 4s linear 0s normal none infinite running sesteren;
-        width: 9vw;
-    }
-  }
-  
-  /* Текст для мобильных устройств: */
-@media screen and (max-width: 900px) {
-    .mobile {
-      font-size: 6.8vw;
-    }
-    img.sesteren {
-        margin: 25;
-        animation: 1s linear 0s normal infinite running sesteren;
-        -webkit-animation: 4s linear 0s normal none infinite running sesteren;
-        width: 9vw;
-    }
-  }
+.mobile {
+    font-size: 6.7vw;
+}
+
+img.sesteren {
+    margin: 25;
+    animation: 1s linear 0s normal infinite running sesteren;
+    -webkit-animation: 4s linear 0s normal none infinite running sesteren;
+    width: 8.9vw;
+}
