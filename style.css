@@ -8,6 +8,7 @@
     --BlTextCl: #ECB365;
     --TextCl: #ECB365;
     --bodyCl: #041C32;
+    --hrefCl: wheat;
 }
 
 
@@ -209,7 +210,7 @@ img.pakeball {
 
 
 .a_t {
-    color: var(--BlTextCl);
+    color: var(--hrefCl);
     /* Цвет обычной ссылки */
     position: relative;
     cursor: pointer;
@@ -226,7 +227,7 @@ img.pakeball {
     width: 0;
     height: 2px;
     /* Высота линии */
-    background-color: var(--BlTextCl);
+    background-color: var(--hrefCl);
     /* Цвет подчеркивания при исчезании линии*/
     transition: width 0.5s;
     /* Время эффекта */
