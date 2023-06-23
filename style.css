@@ -308,3 +308,16 @@ img.sesteren {
     -webkit-animation: 4s linear 0s normal none infinite running sesteren;
     width: 8.6vw;
 }
+
+.block2 {
+    font-size: 2vw;
+    color: var(--BlTextCl);
+    background-color: var(--blockBg);
+    border-radius: 10px;
+    width: 70%;
+    float: left;
+    padding: 10px;
+    margin: 10px 10px 10px 10px;
+    text-shadow: 1px 1px var(--blockSh);
+    box-shadow: 0px 0px 3px 2px var(--blockSh);
+}
