@@ -242,7 +242,7 @@ img.pakeball {
     bottom: -3px;
     height: 2px;
     /* Высота линии */
-    background-color: var(--BlTextCl);
+    background-color: var(--hrefCl);
     /* Цвет подчеркивания при появлении линии*/
     transition: width 0.5s;
     /* Время эффекта */
