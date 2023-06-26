@@ -106,13 +106,6 @@ li {
     border: 6px double black;
 }
 
-img.sesteren {
-    margin: 25;
-    animation: 1s linear 0s normal infinite running sesteren;
-    -webkit-animation: 4s linear 0s normal none infinite running sesteren;
-    width: 120px;
-}
-
 @keyframes sesteren {
     0% {
         transform: rotate(0deg);
