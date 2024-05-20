@@ -1,2 +1,5 @@
-1, 
-enabled, 
+1
+enabled
+minecraft
+roblox
+steam
