@@ -29,7 +29,9 @@ body {
     user-select: none;         /* Non-prefixed version, supported by Chrome, Opera and Firefox */
 }
 
-
+img {
+    pointer-events: none;
+}
 
 
 .potato_counter {
