@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const mainButton = document.getElementById("MainButton");
 
-    mainButton.addEventListener("click", function () {
+    mainButton.addEventListener("mousedown" || "touchstart", function () {
         var count_potatos = localStorage.getItem('count_potatos') ? parseInt(localStorage.getItem('count_potatos'), 10) : 0; // Инициализация переменной     
         count_potatos = count_potatos + 1;
         text_count_potatos.textContent = count_potatos;
