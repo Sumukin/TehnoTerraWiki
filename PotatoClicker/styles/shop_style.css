@@ -1,0 +1,129 @@
+.dividing_line {
+    height: 5;
+    background: #f69311;
+    margin-left: 10;
+    margin-right: 10;
+    border-width: 0;
+    border-radius: 50px;
+}
+
+.shop_title {
+    margin: 0;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 5vw;
+    color: #f69311;
+    text-shadow: 2px 2px 4px #db4f0e;
+}
+
+.shop_menu {
+    display: grid;
+    grid-column: 1;
+
+    align-items: center;
+    justify-content: center;
+}
+
+.option_bg {
+    font-family: "Montserrat", sans-serif;
+    width: 90vw;
+
+    margin: 5;
+
+    background-color: #f69311;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #db4f0e;
+}
+
+.option {
+    height: min-content;
+    margin-left: auto;
+    margin: 10;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #db4f0e;
+}
+
+
+.option_img {
+    height: fit-content;
+    width: 15vw;
+    padding-top: auto;
+    padding-bottom: auto;
+    margin: 10;
+}
+
+.option_title {
+    font-size: 7vw;
+    font-weight: bolder;
+    margin: 0;
+}
+
+.option_description {
+    font-size: 2vw;
+    margin: 3;
+}
+
+.description {
+    font-family: "Montserrat", sans-serif;
+}
+
+.option_production {
+    font-size: 4vw;
+    margin: 3;
+}
+
+.buy_btn {
+    padding: 3px;
+    font-family: "Montserrat", sans-serif;
+    background-color: #ffffff;
+    box-shadow: 3px 3px 3px #db4f0e;
+    color: #000000;
+
+    font-size: 100%;
+    width: min-content;
+    height: min-content;
+
+    border-radius: 5px;
+    margin: 5px;
+    float: right;
+    vertical-align: top;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.price_text {
+    margin: 10;
+    font-size: 100%;
+}
+
+
+@keyframes press_btn {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+@keyframes release_btn {
+    0% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.press_btn {
+    animation: press_main_button 0.2s ease forwards;
+}
+
+.release_btn {
+    animation: release_main_button 0.2s ease forwards;
+}

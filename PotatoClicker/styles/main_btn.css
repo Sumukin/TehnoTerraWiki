@@ -1,0 +1,56 @@
+.potato_img {
+    display: block;
+    height: auto;
+    width: auto;
+    height: 50%;
+
+    /* margin-top: 3%;
+    margin-bottom: 5%;
+
+    margin-left: 4%;
+    margin-right: auto; */
+
+    transition: all 0.2s ease-in-out;
+}
+
+.ptt_img_cntnr {
+    width: 100%;
+    height: 50vh;
+    max-height: 50vh;
+    overflow: visible;
+    display: flex;
+    align-items: center;
+    /* Вертикальное выравнивание по центру */
+    justify-content: center;
+    /* Горизонтальное выравнивание по центру */
+
+    /* Высота контейнера, чтобы он занимал всю высоту видимого окна */
+}
+
+@keyframes press_main_button {
+    0% {
+        transform: scale(1);
+    }
+
+    100% {
+        transform: scale(0.95);
+    }
+}
+
+@keyframes release_main_button {
+    0% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.press_main_button {
+    animation: press_main_button 0.2s ease forwards;
+}
+
+.release_main_button {
+    animation: release_main_button 0.2s ease forwards;
+}

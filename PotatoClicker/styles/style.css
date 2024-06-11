@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+@import "animate.css";
+
+/* @font-face {
+    font-family: "Roboto Regular";
+    src: url("../fonts/Roboto-Regular.ttf");
+} */
+
+header {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    color: #f69311;
+    text-shadow: 2px 2px 4px #db4f0e;
+    height: max-content;
+}
+
+
+
+
+body {
+    background-color: #252525;
+    margin: 0;
+    padding: 0;
+
+
+
+    -webkit-user-select: none; /* Safari */
+    -moz-user-select: none;    /* Firefox */
+    -ms-user-select: none;     /* Internet Explorer/Edge */
+    user-select: none;         /* Non-prefixed version, supported by Chrome, Opera and Firefox */
+}
+
+
+
+
+.potato_counter {
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    /* font-family: "Comfortaa", sans-serif; */
+    color: #f69311;
+    text-shadow: 2px 2px 4px #db4f0e;
+}

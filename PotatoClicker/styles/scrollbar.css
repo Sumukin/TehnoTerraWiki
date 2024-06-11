@@ -1,0 +1,38 @@
+/* Общий стиль для полосы прокрутки */
+::-webkit-scrollbar {
+    width: 12px; /* Ширина вертикальной полосы прокрутки */
+    height: 12px; /* Высота горизонтальной полосы прокрутки */
+}
+
+/* Стиль для трека полосы прокрутки */
+::-webkit-scrollbar-track {
+    background: #252525; /* Цвет фона трека */
+    border-radius: 10px; /* Скругление углов трека */
+}
+
+/* Стиль для бегунка полосы прокрутки */
+::-webkit-scrollbar-thumb {
+    background: #ce5656; /* Цвет бегунка */
+    border-radius: 10px; /* Скругление углов бегунка */
+}
+/* Пример для Firefox */
+* {
+    scrollbar-width: thin; /* Тонкая полоса прокрутки */
+    scrollbar-color: #ce5656 #252525; /* Цвета бегунка и трека соответственно */
+}
+
+/* Дополнительный пример для универсальной кроссбраузерной поддержки с использованием псевдо-элементов */
+body::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+body::-webkit-scrollbar-track {
+    background: #252525;
+    border-radius: 10px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #ce5656;
+    border-radius: 10px;
+}
