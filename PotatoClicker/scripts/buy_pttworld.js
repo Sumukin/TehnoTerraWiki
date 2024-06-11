@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const buy_Btns = document.getElementsByClassName("buy_pttworld");
+    const buy_Btns = document.getElementsByClassName("buy_btn");
 
     Array.prototype.forEach.call(buy_Btns, function (buy_Btn) {
         buy_Btn.addEventListener("mousedown", function () {
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     text_count_potatos.textContent = count_potatos; // Обновление значения при загрузке страницы
 
-    const PotatoWorld = document.getElementById("PotatoWorld");
+    const PotatoWorld = document.getElementById("buy_pttworld");
 
     PotatoWorld.addEventListener("mousedown" || "touchstart", function () {
         var count_potatos = localStorage.getItem('count_potatos') ? parseInt(localStorage.getItem('count_potatos'), 10) : 0; // Инициализация переменной
