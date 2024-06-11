@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-    const buy_Btns = document.getElementsByClassName("buy_btn");
+    const buy_Btns = document.getElementsByClassName("buy_pttworld");
 
     Array.prototype.forEach.call(buy_Btns, function (buy_Btn) {
         buy_Btn.addEventListener("mousedown", function () {
