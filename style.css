@@ -12,6 +12,9 @@
     --hrefCl: wheat;
 }
 
+html {
+    overflow-x: hidden;
+}
 
 header {
     display: flex;
