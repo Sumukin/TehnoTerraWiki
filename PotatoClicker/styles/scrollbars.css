@@ -1,0 +1,31 @@
+/* WebKit browsers (Chrome, Safari) */
+*::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #4b4b4b;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+
+*::-webkit-scrollbar-thumb:hover {
+    background-color: #6b6b6b;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #4b4b4b transparent;
+}
+
+/* Internet Explorer and Edge */
+body {
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+}
+
+html, body {
+    overflow: -moz-scrollbars-none;
+    -ms-overflow-style: none;
+}

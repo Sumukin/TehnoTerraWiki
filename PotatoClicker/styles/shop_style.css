@@ -1,0 +1,125 @@
+.shop {
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    height: 100%;
+
+    overflow-y: auto;
+    overflow-x: hidden;
+    
+    scrollbar-width: thin;
+    scrollbar-color: orange;
+
+    /* align-items: center; */
+    justify-content: flex-start;
+}
+
+.card {
+    width: 95%;
+    height: min-content;
+    margin-left: 3%;
+    margin-right: 3%;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+    padding: 1%;
+
+    border-radius: 10px;
+    box-shadow: 3px 3px 3px #db4f0e;
+    background-color: #f69311;
+
+    font-family: "Montserrat", sans-serif;
+}
+
+.card_info {
+
+    height: auto;
+    padding: 1%;
+    margin: 0px;
+    color: black;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    
+}
+
+.card_title {
+    display: flex;
+    font-size: 21px;
+    align-items: center;
+}
+
+.card_img {
+    width: 20%;
+    height: auto;
+    float: left;
+    margin-right: 1%;
+}
+
+.card_title_text {
+    display: block;
+}
+
+.produce {
+    font-size: 16px;
+}
+
+.card_dscrptn {
+    font-size: 16px;
+}
+
+.card_buy_cntnr {
+    margin: 1%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.card_price {
+    width: min-content;
+    white-space: nowrap;
+    font-size: 16px;
+    margin-right: auto;
+}
+
+.card_buy_btn {
+    width: min-content;
+    white-space: nowrap;
+    font-size: 16px;
+    margin-left: auto;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #f69311;
+    box-shadow: 3px 3px 3px #db4f0e;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+@keyframes press_card_buy_btn {
+    0% {
+        transform: scale(100%);
+    }
+
+    100% {
+        transform: scale(95%);
+    }
+}
+
+@keyframes release_card_buy_btn {
+    0% {
+        transform: scale(95%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.press_card_buy_btn{
+    animation: press_card_buy_btn 0.2s ease forwards;
+}
+
+.release_card_buy_btn {
+    animation: release_card_buy_btn 0.2s ease forwards;
+}

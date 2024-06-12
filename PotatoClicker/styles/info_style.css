@@ -1,0 +1,23 @@
+.info {
+    width: 100%;
+    height: min-content;
+    font-family: "Montserrat", sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.ptt_count {
+    font-size: 150%;
+    color: white;
+    margin: 2%;
+    display: inline-block;
+    white-space: nowrap;
+    min-width: min-content;
+}
+
+
+.announcements {
+    color: white;
+    margin: 2%;
+    height: min-content;
+}
