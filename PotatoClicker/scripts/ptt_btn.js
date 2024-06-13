@@ -1,13 +1,18 @@
 document.addEventListener('DOMContentLoaded', function () {
     const text_count_ptts = document.getElementById("text_count_ptts");
     var count_ptts = parseInt(localStorage.getItem('count_ptts') ? parseInt(localStorage.getItem('count_ptts'), 10) : 0);
+    var income = parseInt(localStorage.getItem('income') ? parseInt(localStorage.getItem('income'), 10) : 0);
+    if (income == NaN || income == 0) {
+        income = 1;
+        localStorage.setItem("income", income)
+    };
     text_count_ptts.textContent = "🥔 " + count_ptts.toString() + " 🥔";
-
     const ptt_btn = document.getElementById("ptt_btn");
 
     ptt_btn.addEventListener("click", function () {
         var count_ptts = parseInt(localStorage.getItem('count_ptts') ? parseInt(localStorage.getItem('count_ptts'), 10) : 0);
-        count_ptts = count_ptts + 1;
+        var income = parseInt(localStorage.getItem('income') ? parseInt(localStorage.getItem('income'), 10) : 0);
+        count_ptts = count_ptts + income;
         text_count_ptts.textContent = "🥔 " + count_ptts.toString() + " 🥔";
         localStorage.setItem('count_ptts', parseInt(count_ptts));
         console.log(count_ptts);
