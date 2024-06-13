@@ -21,3 +21,44 @@
     margin: 2%;
     height: min-content;
 }
+
+.reset_btn {
+    width: min-content;
+    white-space: nowrap;
+    font-size: 16px;
+    margin-left: auto;
+    font-weight: bolder;
+    color: #ffffff;
+    background-color: #f69311;
+    box-shadow: 3px 3px 3px #db4f0e;
+    padding: 2px;
+    border-radius: 3px;
+}
+
+@keyframes press_reset_btn {
+    0% {
+        transform: scale(100%);
+    }
+
+    100% {
+        transform: scale(95%);
+    }
+}
+
+@keyframes release_reset_btn {
+    0% {
+        transform: scale(95%);
+    }
+
+    100% {
+        transform: scale(100%);
+    }
+}
+
+.press_reset_btn{
+    animation: press_reset_btn 0.2s ease forwards;
+}
+
+.release_reset_btn {
+    animation: release_reset_btn 0.2s ease forwards;
+}
