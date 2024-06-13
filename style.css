@@ -53,7 +53,9 @@ body {
     color: var(--BlTextCl);
     background-color: var(--blockBg);
     border-radius: 10px;
-    width: auto;
+    width: min-content;
+    height: min-content;
+    white-space: nowrap;
     float: left;
     padding: 10px;
     margin: 10px 10px 10px 10px;
@@ -323,4 +325,4 @@ img.sesteren {
     text-shadow: 1px 1px 0px black;
     margin: 10;
     color: white;
-}9*
+}
