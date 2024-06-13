@@ -41,6 +41,7 @@ body {
 .main_cntnr {
     display: flex;
     height: 70%;
+    width: 100%;
 }
 
 .vertical_divider {
