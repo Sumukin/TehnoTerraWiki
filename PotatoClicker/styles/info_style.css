@@ -25,14 +25,16 @@
 .reset_btn {
     width: min-content;
     white-space: nowrap;
-    font-size: 16px;
+    margin: 1%;
     margin-left: auto;
+    padding: 2px;
+    border-radius: 3px;
+
+    font-size: 12px;
     font-weight: bolder;
     color: #ffffff;
     background-color: #f69311;
     box-shadow: 3px 3px 3px #db4f0e;
-    padding: 2px;
-    border-radius: 3px;
 }
 
 @keyframes press_reset_btn {
