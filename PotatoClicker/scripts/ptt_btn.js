@@ -12,6 +12,10 @@ document.addEventListener('DOMContentLoaded', function () {
     ptt_btn.addEventListener("click", function () {
         var count_ptts = parseInt(localStorage.getItem('count_ptts') ? parseInt(localStorage.getItem('count_ptts'), 10) : 0);
         var income = parseInt(localStorage.getItem('income') ? parseInt(localStorage.getItem('income'), 10) : 0);
+        if (income == NaN || income == 0) {
+            income = 1;
+            localStorage.setItem("income", income)
+        };
         count_ptts = count_ptts + income;
         text_count_ptts.textContent = "🥔 " + count_ptts.toString() + " 🥔";
         localStorage.setItem('count_ptts', parseInt(count_ptts));
