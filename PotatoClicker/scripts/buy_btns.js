@@ -48,6 +48,8 @@ function buy_card() {
 
             text_count_ptts.textContent = "🥔 " + count_ptts.toString() + " 🥔"; //Переписываем текст под текущий баланс
             localStorage.setItem('count_ptts', count_ptts);
+
+            UpdateIncomePtts()
         }
     }
 

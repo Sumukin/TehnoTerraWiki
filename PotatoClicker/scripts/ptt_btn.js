@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
     text_count_ptts.textContent = "🥔 " + count_ptts.toString() + " 🥔";
     const ptt_btn = document.getElementById("ptt_btn");
 
+
+    
     ptt_btn.addEventListener("click", function () {
         var count_ptts = parseInt(localStorage.getItem('count_ptts') ? parseInt(localStorage.getItem('count_ptts'), 10) : 0);
         var income = parseInt(localStorage.getItem('income') ? parseInt(localStorage.getItem('income'), 10) : 0);
