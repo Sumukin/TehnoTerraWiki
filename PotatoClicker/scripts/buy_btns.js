@@ -42,14 +42,17 @@ function buy_card() {
         const text_count_ptts = document.getElementById("text_count_ptts");
         let count_ptts = localStorage.getItem('count_ptts') ? parseInt(localStorage.getItem('count_ptts'), 10) : 0;
         if (count_ptts >= option_price) { //Проверяем, хватает ли у пользователя денег для покупки
-            count_ptts -= option_price; //Списываем оплату
+            let options_array = JSON.parse(localStorage.getItem('options_array')) || {};
+            if (options_array[user_choice] = 0) {
+                count_ptts -= option_price; //Списываем оплату
 
-            rewriteChosenOptions(user_choice) //Записываем то, что мы купили и перерасчитывваем доход пользователя
-
-            text_count_ptts.textContent = "🥔 " + count_ptts.toString() + " 🥔"; //Переписываем текст под текущий баланс
-            localStorage.setItem('count_ptts', count_ptts);
-
-            UpdateIncomePtts()
+                rewriteChosenOptions(user_choice) //Записываем то, что мы купили и перерасчитывваем доход пользователя
+    
+                text_count_ptts.textContent = "🥔 " + count_ptts.toString() + " 🥔"; //Переписываем текст под текущий баланс
+                localStorage.setItem('count_ptts', count_ptts);
+    
+                UpdateIncomePtts()
+            }
         }
     }
 
