@@ -43,7 +43,7 @@ function buy_card() {
         let count_ptts = localStorage.getItem('count_ptts') ? parseInt(localStorage.getItem('count_ptts'), 10) : 0;
         if (count_ptts >= option_price) { //Проверяем, хватает ли у пользователя денег для покупки
             let options_array = JSON.parse(localStorage.getItem('options_array')) || {};
-            if (options_array[user_choice] = 0) {
+            if (options_array[user_choice] = 0 || !options_array[user_choice]) {
                 count_ptts -= option_price; //Списываем оплату
 
                 rewriteChosenOptions(user_choice) //Записываем то, что мы купили и перерасчитывваем доход пользователя
