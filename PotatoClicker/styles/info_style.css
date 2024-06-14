@@ -15,6 +15,15 @@
     min-width: min-content;
 }
 
+.ptt_income {
+    font-size: 150%;
+    color: white;
+    margin: 2%;
+    display: inline-block;
+    white-space: nowrap;
+    min-width: min-content;
+}
+
 
 .announcements {
     color: white;
