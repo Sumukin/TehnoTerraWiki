@@ -15,6 +15,14 @@ function buy_card() {
     var option_price = option_info[user_choice][0]
     var option_income = option_info[user_choice][1]
 
+    function UpdateIncomePtts() {
+        const text_income_ptts = document.getElementById("text_income_ptts");
+        let income_ptts = localStorage.getItem('income') ? parseInt(localStorage.getItem('income'), 10) : 0;
+        text_income_ptts.textContent = "+" + income_ptts.toString() + " 🥔/Клик";
+
+    }
+
+
     function rewriteChosenOptions(user_choice) {
         let options_array = JSON.parse(localStorage.getItem('options_array')) || {}; //Получаем все наши покупки из LocalStorage
         if (!options_array[user_choice]) {
