@@ -58,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
             keys = Object.keys(options_array)
             lastKey = keys[keys.length - 1]
             console.log(lastKey)
-            ptt_btn.src = "images/webp/" + lastKey + "_logo.webp";
+            // ptt_btn.src = "images/webp/" + lastKey + "_logo.webp";
         }
     }
 
