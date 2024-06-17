@@ -1,6 +1,8 @@
 import { updatePttsCount } from './text_update.js';
 import { updatePttsIncome } from './text_update.js';
 import { updateBuyBtnStatus } from './text_update.js';
+import {updateAllBuyBtnsStatus} from "./text_update.js";
+
 document.addEventListener('DOMContentLoaded', function () {
     const reset_btn = document.getElementById("reset_btn");
 
@@ -16,7 +18,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         text_count_ptts.textContent = "🥔 " + count_ptts.toString() + " 🥔";
         text_income_ptts.textContent = "+" + income.toString() + " 🥔/Клик";
-
+        updateAllBuyBtnsStatus()
+        
         console.log("Прогресс сброшен.");
     });
 
