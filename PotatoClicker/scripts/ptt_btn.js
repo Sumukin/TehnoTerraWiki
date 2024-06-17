@@ -36,6 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             localStorage.setItem("income", income);
         }
         count_ptts = count_ptts + income;
+        checkAndChangeImage(count_ptts)
         text_count_ptts.textContent = "🥔 " + count_ptts.toString() + " 🥔";
         localStorage.setItem('count_ptts', parseInt(count_ptts));
 
@@ -44,8 +45,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
         createFloatingElement("+" + income + " 🥔", x, y - 10);
 
+        
         console.log(count_ptts);
     });
+
+
+    function checkAndChangeImage(count) {
+        if (count == 1488) {
+            ptt_btn.src = "images/webp/pashalko.webp";  // Change to the new image path
+        } else {
+            ptt_btn.src = "images/webp/PotatoTeam_logo.webp";
+        }
+    }
 
     ptt_btn.addEventListener("mousedown", function () {
         ptt_btn.classList.remove("release_ptt_btn");
