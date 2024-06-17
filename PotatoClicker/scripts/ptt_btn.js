@@ -50,17 +50,17 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    function checkAndChangeImage(count) {
-        if (count == 1488) {
-            ptt_btn.src = "images/webp/pashalko.webp";
-        } else {
-            let options_array = JSON.parse(localStorage.getItem('options_array')) || {};
-            keys = Object.keys(options_array)
-            lastKey=keys[keys.length - 1]
-            console.log(lastKey)
-            ptt_btn.src = "images/webp/" + lastKey + "_logo.webp";
-        }
-    }
+    // function checkAndChangeImage(count) {
+    //     if (count == 1488) {
+    //         ptt_btn.src = "images/webp/pashalko.webp";
+    //     } else {
+    //         let options_array = JSON.parse(localStorage.getItem('options_array')) || {};
+    //         keys = Object.keys(options_array)
+    //         lastKey=keys[keys.length - 1]
+    //         console.log(lastKey)
+    //         ptt_btn.src = "images/webp/" + lastKey + "_logo.webp";
+    //     }
+    // }
 
     ptt_btn.addEventListener("mousedown", function () {
         ptt_btn.classList.remove("release_ptt_btn");
