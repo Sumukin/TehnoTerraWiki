@@ -15,7 +15,13 @@ function updateBuyBtnStatus(card_buy_btn_id) {
     card_buy_btn.innerHTML = "Куплено"
 }
 
+//Если найду более оптимальное решение, то исправлю, а пока так (в общем и целом тут все ок)
 function updateAllBuyBtnsStatus() {
+    var options = ["PotatoTeam", "PotatoServer", "PotatoStream", "PotatoGuild", "PotatoDiscord", "PotatoWars", "PotatoWorld"]
+    for (var keys in options) {
+        var card_buy_btn = document.getElementById(keys);
+        card_buy_btn.innerHTML = "Купить"
+    }
     let options_array = JSON.parse(localStorage.getItem('options_array')) || {};
     for (var keys in options_array) {
         var card_buy_btn = document.getElementById(keys);
