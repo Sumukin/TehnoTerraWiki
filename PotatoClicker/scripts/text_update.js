@@ -15,7 +15,7 @@ function updateBuyBtnStatus(card_buy_btn_id) {
     card_buy_btn.innerHTML = "Куплено"
 }
 
-function updateAllBuyBtnsStatus(card_buy_btn_ids) {
+function updateAllBuyBtnsStatus() {
     let options_array = JSON.parse(localStorage.getItem('options_array')) || {};
     for (var keys in options_array) {
         var card_buy_btn = document.getElementById(keys);
