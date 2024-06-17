@@ -16,6 +16,10 @@ export function updateBuyBtnStatus(card_buy_btn_id) {
 }
 
 export function updateBuyBtnsStatus(card_buy_btn_ids) {
-    const card_buy_btn = document.getElementById(card_buy_btn_id);
-    card_buy_btn.innerHTML = "Куплено"
+    let options_array = JSON.parse(localStorage.getItem('options_array')) || {};
+    for (var keys in options_array) {
+        
+        const card_buy_btn = document.getElementById(card_buy_btn_id);
+        card_buy_btn.innerHTML = "Куплено"
+    }
 }
