@@ -54,7 +54,7 @@ function buy_card() {
                 localStorage.setItem('count_ptts', count_ptts);
     
                 UpdateIncomePtts()
-                updateBuyBtnStatus(user_choice)
+                // updateBuyBtnStatus(user_choice)
             }
         }
     }
