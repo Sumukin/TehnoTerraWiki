@@ -20,12 +20,14 @@ function updateAllBuyBtnsStatus() {
     var options = ["PotatoTeam", "PotatoServer", "PotatoStream", "PotatoGuild", "PotatoDiscord", "PotatoWars", "PotatoWorld"]
     for (var keys in options) {
         var card_buy_btn = document.getElementById(keys);
-        card_buy_btn.innerHTML = "Купить"
+        card_buy_btn.innerHTML = "Купить";
+        console.log(keys, card_buy_btn)
     }
     let options_array = JSON.parse(localStorage.getItem('options_array')) || {};
     for (var keys in options_array) {
         var card_buy_btn = document.getElementById(keys);
-        card_buy_btn.innerHTML = "Куплено"
+        card_buy_btn.innerHTML = "Куплено";
+        console.log(keys, card_buy_btn)
     }
 }
 
