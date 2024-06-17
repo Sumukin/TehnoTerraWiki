@@ -1,6 +1,6 @@
 // import {updateBuyBtnStatus} from "./text_update.js";
 
-function buy_card() {
+function buy_card(event) {
     const user_choice = event.target.id;
 
     //Вот тут можно сделать увеличение цен
