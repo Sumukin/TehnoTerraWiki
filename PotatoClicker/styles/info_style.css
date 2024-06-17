@@ -74,3 +74,13 @@
 .release_reset_btn {
     animation: release_reset_btn 0.2s ease forwards;
 }
+
+
+.dsclmr {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 1px;
+
+    margin: 0px;
+    bottom: 0px;
+}
