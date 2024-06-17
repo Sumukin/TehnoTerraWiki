@@ -1,4 +1,4 @@
-// import { updateBuyBtnStatus } from "./text_update";
+import {updateBuyBtnStatus} from "./text_update.js";
 
 function buy_card() {
     const user_choice = event.target.id;
