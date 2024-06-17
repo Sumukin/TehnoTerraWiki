@@ -9,12 +9,12 @@ function buy_card(event) {
 
     //Вот тут можно сделать увеличение цен
     var option_info = {      //цена, заработок
-        "PotatoTeam":    [10, 1],
-        "PotatoServer":  [100, 2],
-        "PotatoStream":  [500, 3],
-        "PotatoGuild":   [1000, 4],
-        "PotatoDiscord": [10000, 5],
-        "PotatoWars":    [100000, 8],
+        "PotatoTeam":    [100, 1],
+        "PotatoServer":  [1000, 2],
+        "PotatoStream":  [5000, 3],
+        "PotatoGuild":   [10000, 5],
+        "PotatoDiscord": [100000, 5],
+        "PotatoWars":    [500000, 5],
         "PotatoWorld":   [10000000, 10]
       };
 
