@@ -36,7 +36,7 @@ document.addEventListener('DOMContentLoaded', function () {
             localStorage.setItem("income", income);
         }
         count_ptts = count_ptts + income;
-        checkAndChangeImage(count_ptts)
+        // checkAndChangeImage(count_ptts)
         text_count_ptts.textContent = "🥔 " + count_ptts.toString() + " 🥔";
         localStorage.setItem('count_ptts', parseInt(count_ptts));
 
