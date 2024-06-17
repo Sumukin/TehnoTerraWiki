@@ -15,7 +15,7 @@ function buy_card() {
     var option_price = option_info[user_choice][0]
     var option_income = option_info[user_choice][1]
 
-    export function UpdateIncomePtts() {
+    function UpdateIncomePtts() {
         const text_income_ptts = document.getElementById("text_income_ptts");
         let income_ptts = localStorage.getItem('income') ? parseInt(localStorage.getItem('income'), 10) : 0;
         text_income_ptts.textContent = "+" + income_ptts.toString() + " 🥔/Клик";
