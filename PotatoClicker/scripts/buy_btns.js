@@ -1,3 +1,5 @@
+import { updateBuyBtnStatus } from "./text_update";
+
 function buy_card() {
     const user_choice = event.target.id;
 
@@ -52,6 +54,7 @@ function buy_card() {
                 localStorage.setItem('count_ptts', count_ptts);
     
                 UpdateIncomePtts()
+                updateBuyBtnStatus(user_choice)
             }
         }
     }
