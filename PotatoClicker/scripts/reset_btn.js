@@ -1,3 +1,6 @@
+import { updatePttsCount } from './text_update.js';
+import { updatePttsIncome } from './text_update.js';
+import { updateBuyBtnStatus } from './text_update.js';
 document.addEventListener('DOMContentLoaded', function () {
     const reset_btn = document.getElementById("reset_btn");
 
