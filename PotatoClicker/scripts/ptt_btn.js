@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function () {
         } else {
             let options_array = JSON.parse(localStorage.getItem('options_array')) || {};
             keys = Object.keys(options_array)
-            print(keys)
+            alert(keys)
             // lastKey = keys[keys.length - 1]
             console.log(options_array)
             // ptt_btn.src = "images/webp/" + lastKey + "_logo.webp";
