@@ -81,13 +81,43 @@
     font-weight: lighter;
     font-size: 10px;
 
-    width: min-content;
-    height: min-content;
+    padding: 5px 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 5px;
+
     white-space: nowrap;
-    
-    margin: 0px;
-    margin-top: auto;
+    margin: 1%;
 
     position: absolute;
-    bottom: 0px;
+    bottom: 10px;  /* Adjusted for better positioning */
+    left: 10px;    /* Adjusted for better positioning */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.full_dsclmr {
+    color: #ffffff;
+    font-weight: lighter;
+    font-size: 10px;
+
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.9);
+    border-radius: 5px;
+
+    width: max-content;  /* Adjusted to fit content better */
+    height: auto;        /* Adjusted to fit content better */
+    white-space: normal; /* Allow wrapping for longer text */
+    
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity 0.3s ease-in-out;  /* Smooth transition effect */
+    
+    position: absolute;
+    bottom: 30px;  /* Adjusted for better positioning */
+    left: 10px;    /* Adjusted for better positioning */
+    z-index: 10;   /* Ensure it appears above other elements */
+}
+
+.dsclmr:hover .full_dsclmr {
+    visibility: visible;
+    opacity: 1;
 }
