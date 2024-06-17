@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function checkAndChangeImage(count) {
         if (count == 1488) {
-            ptt_btn.src = "images/webp/pashalko.webp";  // Change to the new image path
+            ptt_btn.src = "images/webp/pashalko.webp";
         } else {
             ptt_btn.src = "images/webp/PotatoTeam_logo.webp";
         }
