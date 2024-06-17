@@ -79,8 +79,12 @@
 .dsclmr {
     color: #ffffff;
     font-weight: lighter;
-    font-size: 8px;
+    font-size: 10px;
 
+    width: min-content;
+    height: min-content;
+    white-space: nowrap;
+    
     margin: 0px;
     margin-top: auto;
 }
