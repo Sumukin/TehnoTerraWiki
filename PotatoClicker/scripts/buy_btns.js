@@ -1,4 +1,8 @@
-// import {updateBuyBtnStatus} from "./text_update.js";
+import {updateBuyBtnStatus} from "./text_update.js";
+
+document.querySelectorAll('.card_buy_btn').forEach(btn => {
+    btn.addEventListener('click', buy_card);
+});
 
 function buy_card(event) {
     const user_choice = event.target.id;
