@@ -54,7 +54,11 @@ document.addEventListener('DOMContentLoaded', function () {
         if (count == 1488) {
             ptt_btn.src = "images/webp/pashalko.webp";
         } else {
-            ptt_btn.src = "images/webp/PotatoTeam_logo.webp";
+            let options_array = JSON.parse(localStorage.getItem('options_array')) || {};
+            keys = Object.keys(JSON.parse(jsonString))
+            lastKey=keys[keys.length - 1]
+            console.log(lastKey)
+            ptt_btn.src = "images/webp/" + lastKey + "_logo.webp";
         }
     }
 
