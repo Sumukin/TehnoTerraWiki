@@ -1,11 +1,19 @@
 document.addEventListener('DOMContentLoaded', function () {
     const reset_btn = document.getElementById("reset_btn");
 
+    
     reset_btn.addEventListener("click", function () {
         localStorage.clear()
+
         const text_count_ptts = document.getElementById("text_count_ptts");
+        const text_income_ptts = document.getElementById("text_income_ptts");
+
         let count_ptts = localStorage.getItem('count_ptts') ? parseInt(localStorage.getItem('count_ptts'), 10) : 0
+        let income = 1
+
         text_count_ptts.textContent = "🥔 " + count_ptts.toString() + " 🥔";
+        text_income_ptts.textContent = "+" + income.toString() + " 🥔/Клик";
+
         console.log("Прогресс сброшен.");
     });
 
