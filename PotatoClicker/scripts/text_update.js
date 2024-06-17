@@ -18,12 +18,9 @@ function updateBuyBtnStatus(card_buy_btn_id) {
 //Если найду более оптимальное решение, то исправлю, а пока так (в общем и целом тут все ок)
 function updateAllBuyBtnsStatus() {
     var options = ["PotatoTeam", "PotatoServer", "PotatoStream", "PotatoGuild", "PotatoDiscord", "PotatoWars", "PotatoWorld"]
-    for (var keys in options) {
-        console.log(keys)
-        // var card_buy_btn = document.getElementById(keys);
-        // card_buy_btn.innerHTML = "Купить";
-        // console.log(keys, card_buy_btn)
-    }
+    options.forEach((i) => {
+        console.log(i)
+        });
     let options_array = JSON.parse(localStorage.getItem('options_array')) || {};
     for (var keys in options_array) {
         var card_buy_btn = document.getElementById(keys);
