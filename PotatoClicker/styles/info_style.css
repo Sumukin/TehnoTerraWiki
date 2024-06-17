@@ -45,6 +45,8 @@
     color: #ffffff;
     background-color: #f69311;
     box-shadow: 3px 3px 3px #db4f0e;
+
+    cursor: pointer;
 }
 
 @keyframes press_reset_btn {
@@ -86,13 +88,12 @@
     box-shadow: 3px 3px 3px #db4f0e;
     border-radius: 5px;
 
+    width: min-content;
+
     white-space: nowrap;
     margin: 1%;
+    cursor: help;
 
-    position: absolute;
-    bottom: 10px;  /* Adjusted for better positioning */
-    left: 10px;    /* Adjusted for better positioning */
-    cursor: pointer; /* Change cursor to pointer on hover */
 }
 
 .full_dsclmr {
@@ -104,13 +105,13 @@
     background-color: #ffffff;
     border-radius: 5px;
 
-    width: max-content;  /* Adjusted to fit content better */
-    height: auto;        /* Adjusted to fit content better */
-    white-space: normal; /* Allow wrapping for longer text */
+    width: max-content;
+    height: auto;
+    white-space: normal;
     
     visibility: hidden;
     opacity: 0;
-    transition: visibility 0s, opacity 0.3s ease-in-out;  /* Smooth transition effect */
+    transition: visibility 0s, opacity 0.3s ease-in-out;
     
     position: absolute;
     bottom: 100%;
@@ -120,4 +121,8 @@
 .dsclmr:hover .full_dsclmr {
     visibility: visible;
     opacity: 1;
+}
+
+.info_bttm_cntnr {
+    display: flex;
 }

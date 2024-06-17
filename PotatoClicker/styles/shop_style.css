@@ -94,6 +94,7 @@
     box-shadow: 3px 3px 3px #db4f0e;
     padding: 2px;
     border-radius: 3px;
+    cursor: pointer;
 }
 
 @keyframes press_card_buy_btn {

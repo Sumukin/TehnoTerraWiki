@@ -10,6 +10,7 @@
 .ptt_btn {
     width: 80%;
     display: block;
+    cursor: pointer;
 }
 
 @keyframes press_ptt_btn {
