@@ -1,3 +1,24 @@
+@keyframes floatUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+}
+
+.floatUp {
+    animation: floatUp 1s ease-out forwards;
+    position: absolute;
+    pointer-events: none;
+
+    color: #ffffff;
+    font-weight: bolder;
+    font-family: "Montserrat", sans-serif;
+}
+
 .ptt_btn_cntnr {
     width: 60%;
     height: 100%;
