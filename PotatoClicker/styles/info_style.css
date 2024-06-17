@@ -87,4 +87,7 @@
     
     margin: 0px;
     margin-top: auto;
+
+    position: absolute;
+    bottom: 0px;
 }
