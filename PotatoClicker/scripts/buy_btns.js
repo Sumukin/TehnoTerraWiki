@@ -57,15 +57,15 @@ function buy_card(event) {
     
                 text_count_ptts.textContent = "🥔 " + count_ptts.toString() + " 🥔"; //Переписываем текст под текущий баланс
                 localStorage.setItem('count_ptts', count_ptts);
-    
+
+                checkAndChangeImage(count_ptts);
                 UpdateIncomePtts()
                 updateBuyBtnStatus(user_choice)
             }
         }
     }
 
-    let count_ptts = localStorage.getItem('count_ptts') ? parseInt(localStorage.getItem('count_ptts'), 10) : 0;
-    checkAndChangeImage(count_ptts);
+
     
     // PotatoWorld.addEventListener("mousedown", updatePotatoCount());
     PotatoWorld.addEventListener("touchstart", updatePotatoCount());
