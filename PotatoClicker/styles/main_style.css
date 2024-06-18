@@ -22,8 +22,8 @@ body {
     margin: 0px;
     padding: 0px;
 
+    -webkit-tap-highlight-color: transparent;
     background-color: #252525;
-
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
