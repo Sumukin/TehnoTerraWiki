@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const x = event.clientX;
         const y = event.clientY;
 
-        createFloatingElement("+" + income + " 🥔", x, y - 10);
+        createFloatingElement("+" + income + " 🥔", x, y - 15);
         
         console.log(count_ptts);
     });
