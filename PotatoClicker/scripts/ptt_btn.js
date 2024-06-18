@@ -44,23 +44,60 @@ document.addEventListener('DOMContentLoaded', function () {
         const y = event.clientY;
 
         createFloatingElement("+" + income + " 🥔", x, y - 10);
-
         
         console.log(count_ptts);
     });
 
 
+    // function checkAndChangeImage(count) {
+    //     if (count == 1488) {
+    //         ptt_btn.src = "images/webp/pashalko.webp";
+    //     } else {
+    //         let options_array = JSON.parse(localStorage.getItem('options_array')) || {};
+    //         keys = Object.keys(options_array)
+    //         lastKey = keys[keys.length - 1]
+    //         console.log(options_array)
+    //         ptt_btn.src = "images/webp/" + lastKey + "_logo.webp";
+    //     }
+    // }
+
     function checkAndChangeImage(count) {
+        // Получаем элемент ptt_btn
+        let ptt_btn = document.getElementById('ptt_btn');
+        
+        // Проверяем, существует ли элемент ptt_btn
+        if (!ptt_btn) {
+            console.error('Element ptt_btn not found');
+            return;
+        }
+        
+        // Проверяем значение count
         if (count == 1488) {
             ptt_btn.src = "images/webp/pashalko.webp";
         } else {
             let options_array = JSON.parse(localStorage.getItem('options_array')) || {};
-            // keys = Object.keys(options_array)
-            // lastKey = keys[keys.length - 1]
-            console.log(options_array)
-            // ptt_btn.src = "images/webp/" + lastKey + "_logo.webp";
+            
+            if (typeof options_array !== 'object' || options_array === null) {
+                console.error('options_array is not a valid object');
+                return;
+            }
+
+            let keys = Object.keys(options_array);
+
+            if (keys.length === 0) {
+                console.error('options_array is empty');
+                return;
+            }
+            let lastKey = keys[keys.length - 1];
+            
+            if (!lastKey) {
+                console.error('lastKey is invalid');
+                return;
+            }
+            ptt_btn.src = "images/webp/" + lastKey + "_logo.webp";
         }
     }
+    
 
     ptt_btn.addEventListener("mousedown", function () {
         ptt_btn.classList.remove("release_ptt_btn");
