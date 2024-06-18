@@ -32,7 +32,7 @@ function updateAllBuyBtnsStatus() {
 function checkAndChangeImage(count) {
     let ptt_btn = document.getElementById('ptt_btn');
     if (!ptt_btn) {
-        console.error('Element ptt_btn not found');
+        console.log('Element ptt_btn not found');
         return;
     }
     if (count == 1488) {
@@ -40,17 +40,17 @@ function checkAndChangeImage(count) {
     } else {
         let options_array = JSON.parse(localStorage.getItem('options_array')) || {};
         if (typeof options_array !== 'object' || options_array === null) {
-            console.error('options_array is not a valid object');
+            console.log('options_array is not a valid object');
             return;
         }
         let keys = Object.keys(options_array);
         if (keys.length === 0) {
-            console.error('options_array is empty');
+            console.log('options_array is empty');
             return;
         }
         let lastKey = keys[keys.length - 1];
         if (!lastKey) {
-            console.error('lastKey is invalid');
+            console.log('lastKey is invalid');
             return;
         }
         ptt_btn.src = "images/webp/" + lastKey + "_logo.webp";
