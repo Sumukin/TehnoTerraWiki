@@ -1,4 +1,5 @@
 import {updateBuyBtnStatus} from "./text_update.js";
+import {checkAndChangeImage} from "./text_update.js"
 
 document.querySelectorAll('.card_buy_btn').forEach(btn => {
     btn.addEventListener('click', buy_card);
@@ -63,6 +64,9 @@ function buy_card(event) {
         }
     }
 
+    let count_ptts = localStorage.getItem('count_ptts') ? parseInt(localStorage.getItem('count_ptts'), 10) : 0;
+    checkAndChangeImage(count_ptts);
+    
     // PotatoWorld.addEventListener("mousedown", updatePotatoCount());
     PotatoWorld.addEventListener("touchstart", updatePotatoCount());
 };
