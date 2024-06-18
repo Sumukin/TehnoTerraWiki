@@ -19,8 +19,8 @@ document.addEventListener('DOMContentLoaded', function () {
 
         text_count_ptts.textContent = "🥔 " + count_ptts.toString() + " 🥔";
         text_income_ptts.textContent = "+" + income.toString() + " 🥔/Клик";
-        updateAllBuyBtnsStatus()
         checkAndChangeImage(count_ptts)
+        updateAllBuyBtnsStatus()
         
         console.log("Прогресс сброшен.");
     });
