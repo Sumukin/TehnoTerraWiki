@@ -31,7 +31,7 @@
 .ptt_btn {
     width: 80%;
     display: block;
-    cursor: url("../images/png/cursor.png");
+    cursor: pointer;
 }
 
 @keyframes press_ptt_btn {
