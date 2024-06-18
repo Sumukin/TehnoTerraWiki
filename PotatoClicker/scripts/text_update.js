@@ -45,6 +45,7 @@ function checkAndChangeImage(count) {
         }
         let keys = Object.keys(options_array);
         if (keys.length === 0) {
+            ptt_btn.src = "images/webp/PotatoTeam_logo.webp";
             console.log('options_array is empty');
             return;
         }
