@@ -43,6 +43,7 @@ function checkAndChangeImage(count) {
             console.log('options_array is not a valid object');
             return;
         }
+        console.log(options_array)
         let keys = Object.keys(options_array);
         if (keys.length === 0) {
             ptt_btn.src = "images/webp/PotatoTeam_logo.webp";
