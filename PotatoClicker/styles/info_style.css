@@ -47,6 +47,11 @@
     box-shadow: 3px 3px 3px #db4f0e;
 
     cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 @keyframes press_reset_btn {
