@@ -32,6 +32,12 @@
     width: 80%;
     display: block;
     cursor: pointer;
+    
+    -webkit-tap-highlight-color: transparent;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
 
 @keyframes press_ptt_btn {
